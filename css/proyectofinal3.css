@@ -1,0 +1,474 @@
+/* Estilos Generales */
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../img/plane.jpg);
+    background-size: cover;
+    font-style: normal;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/* Estilos Index */
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.header a{
+    text-decoration: none;
+    color: black;
+    padding: 15px;
+    font-size: 20px;
+}
+.main{
+    text-align: center;
+}
+.main h1{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding: 50px;
+}
+.main li{
+    display: flex;
+    display: inline-block;
+}
+.main img{
+    border-radius: 50%;
+    text-decoration: none;
+}
+.aparecer {
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+@keyframes aparecer {
+    0% {
+    opacity: 0;
+    }
+    100% {
+    opacity: 1;
+    }
+}
+.section{
+    padding: 50px;
+}
+.section h1{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.section h2{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+}
+.section a{
+    color: black;
+    margin-left: 10px;
+}
+.section a:hover{
+    color: red;
+}
+.footer{
+    text-align: center;
+}
+.footer .noDeco{
+    text-decoration: none;
+    color: white;
+}
+.squareCorner{
+    border-radius: 20%;
+}
+.highlight{
+    background-color: pink;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 5rem;
+}
+.generalGrid{
+    display: grid;
+    grid-template-rows: 10% 40% 20% 30%;
+    grid-template-areas:
+    "encabezado"
+    "principal"
+    "seccion"
+    "pie"
+    ;
+}
+.header { grid-area: encabezado;}
+
+.main   { grid-area: principal;}
+
+.section { grid-area: seccion;}
+
+.footer { grid-area: pie;}
+.end{
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos Generales de Secciones */
+
+.menu{
+    background-color: pink;
+    opacity: 0.7;
+}
+.menu ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.menu a{
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+    color: blue;
+}
+.menu a:hover {
+    color: red;
+}
+.margen{
+    margin-left: 45rem;
+}
+
+/* Estilos About Us */
+
+.nosotros{
+    text-align: center;
+    color: rgb(15, 11, 11);
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    line-height: 4vh;
+}
+.nosotros h1{
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* Estilos Contact */
+
+.contact{
+    text-align: center;
+    color: rgb(15, 11, 11);
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    line-height: 4vh;
+}
+.contact h1{
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* Estilos Help */
+
+.margen2{
+    margin-left: 40rem;
+}
+.ayuda{
+    text-align: center;
+    color: rgb(15, 11, 11);
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    line-height: 4vh;
+}
+.ayuda h1{
+    font-size: 30px;
+    padding: 20px;
+}
+
+/* Estilos Ranking */
+
+.ranking{
+    text-align: center;
+    color: rgb(15, 11, 11);
+    margin-top: 100px;
+    margin-right: 300px;
+    margin-left: 300px;
+    line-height: 4vh;
+}
+.ranking ol{
+    list-style: none;
+}
+.ranking h1{
+    font-size: 25px;
+    padding: 20px;
+    color: red;
+}
+.centerTable{
+    background-color:rgb(253, 207, 238);opacity:0.7;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+/* Estilos America */
+
+.america h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+.america div ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 6px;
+    font-weight: bold;
+}
+.america li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 3px;
+}
+.americaGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "NA CA SA"
+    ;
+}
+.NA {grid-area: NA;}
+
+.CA {grid-area: CA;}
+
+.SA {grid-area: SA;}
+
+/* Estilos Argentina */
+
+.argentina h1{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+.argentinaGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 5px 5px ;
+    grid-template-areas:
+        "imagen1 imagen3 imagen3 imagen3 imagen7"
+        "imagen1 imagen5 imagen6 imagen4 imagen4"
+        "imagen1 imagen5 imagen6 imagen2 imagen2";
+    justify-content: center;
+    padding: 50px;
+}
+.imagen1 {
+    grid-area: imagen1;
+    background-image: url(../img/obelisco.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen2 {
+    grid-area: imagen2;
+    background-image: url(../img/trevelin.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen3 {
+    grid-area: imagen3;
+    background-image: url(../img/cataratas.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen3:hover{
+    transform: scale(2);
+}
+.imagen4 {
+    grid-area: imagen4;
+    background-image: url(../img/jujuy.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen5 {
+    grid-area: imagen5;
+    background-image: url(../img/glaciar.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen6 {
+    grid-area: imagen6;
+    background-image: url(../img/tango.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen6:hover{
+    transform: rotateY(180deg);
+}
+.imagen7 {
+    grid-area: imagen7;
+    background-image: url(../img/mendoza.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+/* Estilos Europa */
+
+.europe h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+.europe ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 6px;
+    font-weight: bold;
+}
+.europe li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 3px;
+}
+
+/* Estilos Spain */
+
+.spain h1{
+    font-size: 20px;
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
+.spainGrid {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 5px 5px ;
+    grid-template-areas:
+        "imagen8 imagen12 imagen12 imagen12 imagen9"
+        "imagen8 imagen11 imagen10 imagen10 imagen9"
+        "imagen8 imagen11 imagen10 imagen10 imagen9";
+    justify-content: center;
+    padding: 50px;
+}
+.imagen8 {
+    grid-area: imagen8;
+    background-image: url(../img/sevilla.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen8:hover{
+    filter: sepia(80%);
+}
+.imagen9 {
+    grid-area: imagen9;
+    background-image: url(../img/malaga.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen9:hover{
+    filter: sepia(80%);
+}
+.imagen10 {
+    grid-area: imagen10;
+    background-image: url(../img/barcelona.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen10:hover{
+    filter: sepia(80%);
+}
+.imagen11 {
+    grid-area: imagen11;
+    background-image: url(../img/barcelona2.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen11:hover{
+    filter: sepia(80%);
+}
+.imagen12 {
+    grid-area: imagen12;
+    background-image: url(../img/ibiza.jpg);
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+.imagen12:hover{
+    filter: sepia(80%);
+}
+/* Estilos Africa */
+
+.africa h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+.africa ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 6px;
+    font-weight: bold;
+}
+.africa li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 3px;
+}
+/* Estilos Asia */
+
+.asia h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+.asia ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 6px;
+    font-weight: bold;
+}
+.asia li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 3px;
+}
+/* Estilos Oceania */
+
+.oceania h1{
+    text-align: center;
+    padding: 40px;
+    font-size: 25px;
+}
+.oceania ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 6px;
+    font-weight: bold;
+}
+.oceania li{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 3px;
+}
