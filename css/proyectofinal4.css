@@ -513,7 +513,6 @@ body{
 }
 
 /* MEDIA QUERIES */
-
 @media (max-width: 411px) {
     .main img {
     width: 7rem;
