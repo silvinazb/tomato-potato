@@ -190,9 +190,11 @@ body{
 
 /* Estilos Contact */
 
-/* .contact{
+.contact{
     padding: 1rem;
-} */
+    color: black;
+    font-weight: bold;
+}
 .contact h1{
     font-size: 1.3rem;
     padding: 1rem;
