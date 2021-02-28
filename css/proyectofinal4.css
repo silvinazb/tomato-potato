@@ -184,6 +184,8 @@ body{
 .nosotros h1{
     font-size: 1.3rem;
     padding: 1rem;
+    color: black;
+    font-weight: bold;
 }
 
 /* Estilos Contact */
