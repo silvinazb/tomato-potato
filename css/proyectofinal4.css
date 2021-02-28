@@ -23,7 +23,10 @@ body{
     text-decoration: none;
     color: black;
     padding: 0.4rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
+}
+.header a:hover{
+    color: red;
 }
 .main{
     text-align: center;
@@ -94,12 +97,12 @@ body{
     padding: 50px;
 }
 .section h1{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     color: black;
 }
 .section h2{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     color: black;
 }
@@ -507,4 +510,11 @@ body{
     justify-content: center;
     list-style-type: none;
     padding: 3px;
+}
+/* MEDIA QUERIES */
+
+@media (max-width: 411px) {
+    .main img {
+    width: 7rem;
+    height: 7rem;
 }
