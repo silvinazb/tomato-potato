@@ -42,6 +42,44 @@ body{
     border-radius: 50%;
     text-decoration: none;
 }
+
+
+.image{ 
+    position: relative;
+}
+.image__img{
+    display: block;
+}
+.image__overlay{
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black (0, 0, 0, 0.6);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+.image__overlay:hover{
+    opacity: 1;
+}
+.image__title{
+    font-size: 1em;
+    font-weight: bold;
+}
+.main a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+
 .aparecer {
     animation-duration: 5s;
     animation-name: aparecer;
