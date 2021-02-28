@@ -505,7 +505,7 @@ body{
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 411px) {
+@media (max-width: 731px) {
     .main img {
     width: 7rem;
     height: 7rem;
