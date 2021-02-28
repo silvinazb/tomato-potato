@@ -2,65 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/proyectofinal3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/proyectofinal4.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
-    <title>Help</title>
+    <title>Ayuda</title>
 </head>
 
 <body>
     <header>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html">Home</a></li> <!-- Rediseñar el logo -->
-                <li><a href="america.html">America</a></li>
-                <li><a href="europe.html">Europe</a></li>
-                <li><a href="asia.html">Asia</a></li>
-                <li><a href="oceania.html">Oceania</a></li>
-                <li><a href="africa.html">Africa</a></li>
-                <li class="margen2"><a href="contact.html">Contact</a></li>
-                <li><a href="about_Us.html">About us</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-danger text-white ">
+            <a class="navbar-brand" href="index.html">Travel Advice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="america.html">America <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="europe.html">Europa <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="asia.html">Asia <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="oceania.html">Oceania<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="africa.html">Africa<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section class="ayuda">
-        <h1>Let us help you</h1>
+        <h1>Responde estas preguntas asi te podemos guiar mejor! </h1>
         <form action="Contact.html" method="GET" class="center"> <!--La idea es agregar mas preguntas o tal vez algun juego-->
             <div>
-                <label for="Question 1" >Who are you planning on travelling with?</label>
-                <input type="text" name="Question 1" id="Question 1" placeholder="Family? Partner? Friends?">
+                <label for="Question 1" >Con quien tenes pensado viajar?</label>
+                <input type="text" name="Question 1" id="Question 1" placeholder="Familia? Pareja? Amigos?">
             </div>
             <div>
-                <label for="Question 2" >How long are you planning to stay?</label>
+                <label for="Question 2" >Cuanto tiempo piensas quedarte en el destino?</label>
                 <input type="text" name="Question 2" id="Question 2">
             </div>
             <div>
-                <label for="Question 3" >How much money are you willing to spend?</label>
-                <input type="text" name="Question 3" id="Question 3" placeholder="IDK is a good answer!">
+                <label for="Question 3" >Cuanto dinero tenias pensado gastar?</label>
+                <input type="text" name="Question 3" id="Question 3" placeholder="La respuesta puede ser no se!">
             </div>
             <div>
-                <label for="Question 4" >Do you prefer travel slow or tick places off your list and move from city to city?</label>
+                <label for="Question 4" >Recorridos tranquilos o mas acelerados?</label>
                 <input type="text" name="Question 4" id="Question 4">
             </div>
             <div>
-                <label for="Question 5" >Summer vacations or winter vacations?</label>
-                <input type="text" name="Question 5" id="Question 5" placeholder="Do not forget spring and fall!">
+                <label for="Question 5" >Verano o invierno?</label>
+                <input type="text" name="Question 5" id="Question 5" placeholder="Pirmavera y otoño">
             </div>
             <div>
-                <label for="Question 6" >What about accommodation? Do you prefer hotel, hostel, Airbnb?</label>
+                <label for="Question 6" >Y que tipo de alojamiento preferis? Hotel, hostel, Airbnb?</label>
                 <input type="text" name="Question 6" id="Question 6">
             </div>
             <div>
-                <label for="Question 7" >Quiet neighborhood or central location?</label>
-                <input type="text" name="Question 7" id="Question 7" placeholder="No correct answer here">
+                <label for="Question 7" >Barrio tranquilo o pleno centro de la ciudad? </label>
+                <input type="text" name="Question 7" id="Question 7" placeholder="Aqui no hay respuesta correcta">
             </div>
             <div>
-                <label for="text">Let us know more about you</label>
+                <label for="text">Cuentanos mas sobre ti</label>
             </div>
             <div>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="70" rows="10"></textarea>
             </div>
             <div>
                 <input type="submit" value="Send form" name="" id="">
@@ -75,5 +89,10 @@
             <a href="https://www.facebook.com/"><img src="img/facebook.jpg" alt="facebook" width="30" height="30" class="squareCorner"></a> 
         </div>
     </footer>
+
+                    <!-- SCRIPTS -->
+                    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 </body>
 </html>
