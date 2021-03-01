@@ -104,6 +104,9 @@ body{
     color: black;
     margin-left: 0.5rem;
 }
+.underline{
+    text-decoration: underline;
+}
 .section a:hover{
     color: red;
 }
