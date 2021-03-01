@@ -199,22 +199,24 @@ body{
     font-size: 1.3rem;
     padding: 1rem;
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
 /* Estilos Help */
 
 .ayuda{
-    /* padding: 1rem; */
+    text-align: center;
+    padding: 1rem;
     color: black;
     font-weight: bold;
-    margin-top: 0;
-    margin-right: 20%;
-    margin-left: 20%;
 }
 .ayuda h1{
     font-size: 1.3rem;
     padding: 1rem;
     text-align: center;
+    color: black;
+    font-weight: bold;
 }
 
 /* Estilos Ranking */
